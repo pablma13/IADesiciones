@@ -2432,12 +2432,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 407679603}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -35.41, y: 0.19, z: 8.094}
-  m_LocalScale: {x: 1, y: 1.83744, z: 6.8065195}
-  m_Children: []
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -35.41, y: 1, z: 6.658}
+  m_LocalScale: {x: 1, y: 5, z: 9}
+  m_Children:
+  - {fileID: 1479896789}
   m_Father: {fileID: 982183856}
-  m_RootOrder: 76
+  m_RootOrder: 42
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!65 &407679605
 BoxCollider:
@@ -3999,6 +4000,7 @@ GameObject:
   - component: {fileID: 672795142}
   - component: {fileID: 672795141}
   - component: {fileID: 672795140}
+  - component: {fileID: 672795144}
   m_Layer: 0
   m_Name: "Sala de m\xFAsica"
   m_TagString: Untagged
@@ -4073,12 +4075,26 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 672795139}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -40, y: -0.2, z: 6.5}
+  m_LocalPosition: {x: -40, y: 0, z: 6.5}
   m_LocalScale: {x: 7, y: 0.5, z: 7}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 18
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &672795144
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 672795139}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 64ca43589fd1f9040b9838ab53128d54, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  PertenenciasDelFantasma: {fileID: 407679603}
+  secreto: {x: -35.41, y: -0.75, z: 6.658}
 --- !u!1 &682638090
 GameObject:
   m_ObjectHideFlags: 0
@@ -4201,7 +4217,7 @@ Rigidbody:
   m_UseGravity: 0
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 62
+  m_Constraints: 126
   m_CollisionDetection: 0
 --- !u!1 &710333815
 GameObject:
@@ -5334,8 +5350,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 965767012}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -35.41, y: 1, z: 8.943}
-  m_LocalScale: {x: 1, y: 5, z: 5.1099997}
+  m_LocalPosition: {x: -35.41, y: 1, z: 10.855}
+  m_LocalScale: {x: 1, y: 5, z: 1.28772}
   m_Children: []
   m_Father: {fileID: 982183856}
   m_RootOrder: 67
@@ -5652,7 +5668,7 @@ Transform:
   - {fileID: 1245921823}
   - {fileID: 1968407427}
   - {fileID: 1645914312}
-  - {fileID: 1479896789}
+  - {fileID: 407679604}
   - {fileID: 710333816}
   - {fileID: 1923041424}
   - {fileID: 718224933}
@@ -5686,7 +5702,6 @@ Transform:
   - {fileID: 728160959}
   - {fileID: 1252196339}
   - {fileID: 1984845896}
-  - {fileID: 407679604}
   m_Father: {fileID: 0}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -7879,11 +7894,11 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1479896788}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -27, y: 0.5, z: 6.871}
-  m_LocalScale: {x: 1, y: 2.1459541, z: 13.021319}
+  m_LocalPosition: {x: 8.41, y: 0, z: 0.023666648}
+  m_LocalScale: {x: 1, y: 1, z: 1.4468133}
   m_Children: []
-  m_Father: {fileID: 982183856}
-  m_RootOrder: 42
+  m_Father: {fileID: 407679604}
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!65 &1479896790
 BoxCollider:
@@ -9850,7 +9865,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1851918134}
   m_LocalRotation: {x: 0, y: 0.6971651, z: 0, w: 0.7169106}
-  m_LocalPosition: {x: -11.46, y: 1.59, z: 12.01}
+  m_LocalPosition: {x: -40.8, y: 1.59, z: 5.6}
   m_LocalScale: {x: 0.8, y: 1.5, z: 0.8}
   m_Children:
   - {fileID: 1125210445}
@@ -10818,8 +10833,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1984845895}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -35.41, y: 1, z: 3.652}
-  m_LocalScale: {x: 1, y: 5, z: 4.3}
+  m_LocalPosition: {x: -35.41, y: 1, z: 2.25}
+  m_LocalScale: {x: 1, y: 5, z: 1.4964}
   m_Children: []
   m_Father: {fileID: 982183856}
   m_RootOrder: 75
