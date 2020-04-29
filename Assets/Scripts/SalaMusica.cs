@@ -18,7 +18,7 @@ public class SalaMusica : MonoBehaviour
         if (collision.gameObject.CompareTag("Fantasma"))
         {
             PertenenciasDelFantasma.transform.position = new Vector3(PertenenciasDelFantasma.transform.position.x,
-                                                                      -0.75f,
+                                                                      -2.5f,
                                                                       PertenenciasDelFantasma.transform.position.z);
         }
     }
@@ -28,7 +28,7 @@ public class SalaMusica : MonoBehaviour
         if (collision.gameObject.CompareTag("Fantasma"))
         {
             PertenenciasDelFantasma.transform.position = new Vector3(PertenenciasDelFantasma.transform.position.x,
-                                                                     0.5f,
+                                                                     1.5f,
                                                                      PertenenciasDelFantasma.transform.position.z);
         }
     }
