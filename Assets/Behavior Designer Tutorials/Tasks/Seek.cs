@@ -1,4 +1,5 @@
 ﻿using UnityEngine;
+using UnityEngine.AI;
 
 namespace BehaviorDesigner.Runtime.Tasks.Tutorials
 {
@@ -60,6 +61,12 @@ namespace BehaviorDesigner.Runtime.Tasks.Tutorials
         // Return targetPosition if target is null
         private Vector3 Target()
         {
+            NavMeshPath camino = new NavMeshPath();
+            if(navMeshAgent.CalculatePath(target.Value.transform.position, camino));
+            {
+
+            }
+            
             if (target.Value != null) {
                 return target.Value.transform.position;
             }
