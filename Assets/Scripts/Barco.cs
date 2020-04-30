@@ -27,6 +27,7 @@ public class Barco : MonoBehaviour
             {
                 aux.PauseWhenDisabled = true;
                 aux.enabled = false;
+                collidedObject.SetActive(false);
             }
             yield return new WaitForSeconds(0.1f);
             ocupado = true;
@@ -44,7 +45,10 @@ public class Barco : MonoBehaviour
             this.transform.position = metaPosition;
 
             if (aux != null)
+            {
                 aux.enabled = true;
+                collidedObject.SetActive(true);
+            }
         }
     }
 

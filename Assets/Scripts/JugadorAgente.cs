@@ -55,7 +55,7 @@ namespace UCM.IAV.Movimiento
         /// </summary>
         public override void FixedUpdate()
         {
-            if (_cuerpoRigido == null)
+            if (_cuerpoRigido is null)
             {
                 transform.Translate(velocidad * Time.deltaTime, Space.World);
             }
