@@ -13,7 +13,7 @@ public class SalaMusica : MonoBehaviour
     //    paredNormal = GetComponent<Transform>().position;
     //}
 
-    private void OnCollisionStay(Collision collision)
+    private void OnCollisionEnter(Collision collision)
     {
         if (collision.gameObject.CompareTag("Fantasma"))
         {
