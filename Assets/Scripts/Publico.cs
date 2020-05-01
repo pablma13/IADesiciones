@@ -37,6 +37,9 @@ public class Publico : MonoBehaviour
         if (collision.gameObject.CompareTag("Lampara"))
         {
             miedo = true;
+            SharedBool publico = (SharedBool) GlobalVariables.Instance.GetVariable("Publico");
+            publico.Value = !miedo;
+            
             fantasma.areaMask = visiblePath;
         }
     }
@@ -44,6 +47,8 @@ public class Publico : MonoBehaviour
     public void calma()
     {
         miedo = false;
+        SharedBool publico = (SharedBool) GlobalVariables.Instance.GetVariable("Publico");
+        publico.Value = !miedo;
         fantasma.areaMask = hiddenPath;
         var aux = fantasma.path;
         fantasma.ResetPath();
