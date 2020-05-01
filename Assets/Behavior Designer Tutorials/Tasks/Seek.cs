@@ -62,6 +62,7 @@ namespace BehaviorDesigner.Runtime.Tasks.Tutorials
         private Vector3 Target()
         {
             NavMeshPath camino = new NavMeshPath();
+            
             if(navMeshAgent.CalculatePath(target.Value.transform.position, camino));
             {
 
